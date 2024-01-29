@@ -1,15 +1,7 @@
-import { db } from "@/app/db/script";
-import { NextApiRequest, NextApiResponse } from "next";
-import { getAuthSession } from "../auth/[...nextauth]/options";
+import { db } from "@/db/script";
 
 export async function POST(req: Request, res: Response) {
   try {
-    // const session = await getAuthSession();
-
-    // if (!session?.user) {
-    //   return new Response("Unauthorized", { status: 401 });
-    // }
-
     const body = await req.json();
 
     console.log(body, "body");

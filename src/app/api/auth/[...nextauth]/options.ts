@@ -2,7 +2,7 @@ import { AuthOptions, getServerSession } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GitHubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { db } from "@/app/db/script";
+import { db } from "@/db/script";
 
 const options: AuthOptions = {
   providers: [

@@ -10,8 +10,10 @@ export default async function Navbar() {
             <ul className="flex justify-evenly text-2xl font-bold">
                 <li><Link href="/">Home</Link></li>
                 {session?.user ? (
-                    <li><Link href="/api/auth/signout">Sign Out</Link></li>
-
+                    <>
+                        <li><Link href="/api/auth/signout">Sign Out</Link></li>
+                        <li><Link href="/addItems">Add</Link></li>
+                    </>
                 ) : (
                     <>
                         <li><Link href="/api/auth/signin">Sign In</Link></li>
