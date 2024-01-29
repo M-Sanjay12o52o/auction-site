@@ -15,7 +15,7 @@ export default async function Navbar() {
                 ) : (
                     <>
                         <li><Link href="/api/auth/signin">Sign In</Link></li>
-                        <li><Link href="/signup">Sign In</Link></li>
+                        <li><Link href="/signup">Sign Up</Link></li>
                     </>
                 )}
                 <li><Link href={"/rooms"}>Auctions</Link></li>
